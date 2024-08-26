@@ -15,7 +15,7 @@ biases?**
 
 3. **How is it possible to create a prosocial chatbot using training data from
 sources that include antisocial examples?**
-- 
+- We have to domain the topic that we're going to talk and comprehend teh challenges in the expressions of our corpus and how we will remove or avoid the typical bias in its this context.
 
 4. **What are 4 different approaches or architectures for building a chatbot?**
 - Keyword-based chatbot → Returns a prepared response which is based on the words found in the message.
@@ -25,10 +25,19 @@ sources that include antisocial examples?**
 
 5. **How is NLP used within a search engine?**
 - In a search engine, NLP is used for two purposes:
-    1. Text Generation: The NLP pipeline generates text to au
+    1. Text Generation: The NLP pipeline generates text to suggest you related (similar) searches like yours.
+    2. Text Summarization: The NLP pipeline compute the similarity between the prompt and all the web pages to return first the most accurate content related to your search.
 
 6. **Write a regular expression to recognize your name and all the variations
 on its spelling (including nicknames) that you’ve seen.**
+- The expression is:
+    ``` python
+    > my_name_regular_expression = r'\b[cC]+[eE]+[sS]+[aA]+[rR]+\b'
+    ```
 
 7. **Write a regular expression to try to recognize a sentence boundary
 (usually a period ("."), question mark "?", or exclamation mark "!")**
+- The expression is:
+    ``` python
+    > pattern = r'[.!?](?=\s|$)'
+    ```
