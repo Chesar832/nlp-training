@@ -1,6 +1,6 @@
 # NLP Learning Path: Zero to Hero
 
-![banner](https://files.oaiusercontent.com/file-hFNAFCVXh68wQ3rdYmDhgtjI?se=2024-08-26T00%3A13%3A35Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2db46f9e-7b38-4d35-88de-287d104e3236.webp&sig=fNrQLhlgIGfsr1Kuw7gljAY7RFzRLkbnRdOcy8tLJ%2B0%3D)
+![banner](https://media.geeksforgeeks.org/wp-content/uploads/20240524132640/nlp-banner.webp)
 
 ## Index
 1. [Text Preprocessing](#1-text-preprocessing)
