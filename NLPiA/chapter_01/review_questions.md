@@ -15,20 +15,10 @@ biases?**
 
 3. **How is it possible to create a prosocial chatbot using training data from
 sources that include antisocial examples?**
-- 
+- Managing the bias and possibly applying external rules to the chatbot for ethical purposes.
 
 4. **What are 4 different approaches or architectures for building a chatbot?**
 - Keyword-based chatbot → Returns a prepared response which is based on the words found in the message.
 - Pattern-based chatbot → Works similarly to the *keyword-based* approach, but these patterns are more robust for a variety of messages.
 - Search-based chatbot → Returns the reponse for the more similar question in a database of Q&A.
 - Natural language chatbot → This approach uses a NLP pipeline (involves a more complex and extensive process) and returns a more human-like response.
-
-5. **How is NLP used within a search engine?**
-- In a search engine, NLP is used for two purposes:
-    1. Text Generation: The NLP pipeline generates text to au
-
-6. **Write a regular expression to recognize your name and all the variations
-on its spelling (including nicknames) that you’ve seen.**
-
-7. **Write a regular expression to try to recognize a sentence boundary
-(usually a period ("."), question mark "?", or exclamation mark "!")**

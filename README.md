@@ -1,236 +1,145 @@
 # NLP Learning Path: Zero to Hero
 
-![banner](https://www.aismartz.com/images/NLP-banner.jpg)
+![banner](https://assets.everspringpartners.com/dims4/default/451e2c2/2147483647/strip/true/crop/1588x500+0+0/resize/800x252!/quality/90/?url=http%3A%2F%2Feverspring-brightspot.s3.us-east-1.amazonaws.com%2F8a%2F10%2Fbed700804b078314f1961ac513cb%2Fscu-leavey-blog-2023-whatisnaturallanguageprocessing-headerimage.jpg)
 
-## 1. Text Preprocessing
-### Description:
-Text preprocessing is the first step in NLP. It involves cleaning and transforming raw text data into a format that can be easily analyzed by machine learning algorithms. Common tasks include tokenization, lemmatization, and punctuation removal.
+# Key NLP Topics and Exercises 
 
-### Internal Topics:
-- Tokenization
-- Lemmatization
-- Punctuation Removal
-- Handling Multilingual Text
-- Dealing with Text with Spelling Errors
+This document outlines key Natural Language Processing (NLP) topics essential for a strong foundational understanding, along with corresponding questions and practical exercises to reinforce each concept.
 
-### Exercise:
-Preprocess a dataset of movie reviews by removing stop words and applying lemmatization using SpaCy.
+Some of the responses will be probably related to the Natural Language Processing in Action (2° edition) book because this repo was born for that book in my search to build a strong foundational understading about NLP topics while I'm also learning about transformers in depth with their applications to NLP tasks such as machine translation, text classification and so on.
 
 ---
 
-## 2. Text Representation
-### Description:
-Convert preprocessed text into a format that machine learning models can understand. This includes techniques like Bag of Words, Count Vectorization, and TF-IDF, as well as more advanced techniques like Word2Vec and Doc2Vec.
+## 1. Text Preprocessing Techniques
 
-### Internal Topics:
-- Bag of Words
-- Count Vectorization
-- TF-IDF
-- Word2Vec and Doc2Vec
-- GloVe
-- FastText
+**Question:**
 
-### Exercise:
-Convert movie reviews to TF-IDF vectors and compare them with Bag of Words.
+What are the common text preprocessing techniques in NLP, and how do they impact the performance of NLP models?
+
+**Exercise:**
+
+Take a raw text dataset (e.g., social media posts) and perform various preprocessing steps such as tokenization, lowercasing, stop word removal, stemming, and lemmatization. Observe how these steps affect the vocabulary size and prepare the data for downstream NLP tasks like sentiment analysis.
 
 ---
 
-## 3. Information Extraction
-### Description:
-Extract important information from text, such as named entities (names of people, organizations, places) and part-of-speech tagging.
+## 2. Tokenization and Text Normalization
 
-### Internal Topics:
-- Named Entity Recognition (NER)
-- Part-of-Speech (POS) Tagging
-- Relationship Extraction
-- Event Extraction
+**Question:**
 
-### Exercise:
-Build a custom NER model using SpaCy.
+What is tokenization in NLP, what are the different types of tokenizers, and why is text normalization important?
+
+**Exercise:**
+
+Implement different tokenization methods (e.g., whitespace tokenization, word tokenization, and subword tokenization) on a sample text. Compare how each method breaks down the text and discuss the implications for tasks like machine translation or language modeling.
 
 ---
 
-## 4. Basic NLP Models
-### Description:
-Build basic text classification models using algorithms like Naive Bayes and Logistic Regression.
+## 3. Text Representation Techniques
 
-### Internal Topics:
-- Naive Bayes
-- Logistic Regression
-- Model Evaluation: Precision, Recall, F1-score
+**Question:**
 
-### Exercise:
-Train a Naive Bayes model to predict the sentiment of movie reviews.
+What are the differences between bag-of-words, TF-IDF, and word embedding approaches for text representation, and what are the trade-offs between these methods?
+
+**Exercise:**
+
+Use a text classification dataset (e.g., classifying emails as spam or not spam). Represent the text data using bag-of-words, TF-IDF, and word embeddings. Train a classifier (e.g., logistic regression or SVM) with each representation and compare their performances in terms of accuracy and computational efficiency.
 
 ---
 
-## 5. Embeddings and Semantic Search
-### Description:
-Convert text into vector representations for semantic search and comparison. Representing text as vectors allows measuring similarity between different documents or queries.
+## 4. Language Models and N-grams
 
-### Internal Topics:
-- Word Embeddings
-- Semantic Search
-- Advanced Techniques: BERT
+**Question:**
 
-### Exercise:
-Use Sentence Transformers to create embeddings and perform a semantic search.
+How do n-gram language models estimate the probability of a word sequence, and what are their limitations in capturing long-range dependencies in language?
+
+**Exercise:**
+
+Use a large text corpus (e.g., a collection of news articles) to build unigram, bigram, and trigram language models. Calculate the probabilities of various sentences using these models and analyze how increasing the n-gram size affects the model's ability to predict word sequences.
 
 ---
 
-## 6. Language Models
-### Description:
-Study the construction and use of language models in NLP. This involves understanding and generating text.
+## 5. Evaluation Metrics in NLP
 
-### Internal Topics:
-- Language Models
-- Perplexity and Evaluation of Language Models
-- Text Generation
-- Coherence Analysis
+**Question:**
 
-### Exercise:
-Build an n-gram language model and evaluate its performance.
+What is perplexity, how is it used to evaluate language models, and why might it be insufficient in certain scenarios, necessitating alternative evaluation metrics?
 
-### Resource:
-- [A Practical Introduction to N-Gram Language Modeling](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
+**Exercise:**
+
+Train different language models (e.g., unigram, bigram, and trigram models) on a text corpus. Calculate the perplexity for each model on a validation set. Additionally, evaluate these models using task-specific metrics like accuracy in next-word prediction to assess how well perplexity correlates with actual performance.
 
 ---
 
-## 7. Deep Learning for NLP
-### Description:
-Learn about deep learning algorithms and how they apply to NLP tasks. This involves understanding neural networks, backpropagation, and transfer learning.
+## 6. Word Embeddings
 
-### Internal Topics:
-- Neural Networks
-- Backpropagation
-- Transfer Learning
-- Regularization Techniques
-- Optimization Specific to NLP
+**Question:**
 
-### Exercise:
-Train an LSTM network for sentiment classification on a movie review dataset.
+How do Word2Vec models generate word embeddings, and what is the difference between the skip-gram and continuous bag-of-words (CBOW) architectures?
 
-### Resource:
-- [The Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+**Exercise:**
+
+Train Word2Vec models using both the skip-gram and CBOW architectures on a text dataset (e.g., Wikipedia articles). Compare the resulting word embeddings by performing tasks like finding word analogies and computing word similarities.
 
 ---
 
-## 8. Transformers and Transfer Learning
-### Description:
-Transformers are the backbone of many modern NLP models and have revolutionized the field with their ability to understand text data.
+## 7. Sentiment Analysis with Naive Bayes
 
-### Internal Topics:
-- Transformer Architecture
-- Transfer Learning
-- Other Transformer-Based Models: GPT, RoBERTa
+**Question:**
 
-### Exercise:
-Get acquainted with using pre-trained models and fine-tune BERT for a specific task.
+How does the Naive Bayes algorithm perform sentiment analysis, and what are the implications of its assumption of feature independence?
 
-### Resource:
-- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+**Exercise:**
+
+Apply the Naive Bayes algorithm to a sentiment analysis dataset (e.g., movie reviews labeled as positive or negative). Evaluate the model's performance and discuss how the independence assumption affects the results. Experiment with techniques like feature selection or n-gram features to improve accuracy.
 
 ---
 
-## 9. Automatic Summarization
-### Description:
-Learn techniques for creating automatic text summaries.
+## 8. Part-of-Speech Tagging with HMMs
 
-### Internal Topics:
-- Extractive Summarization
-- Abstractive Summarization
-- TextRank Algorithm
-- Comparison of Extractive and Abstractive Approaches
+**Question:**
 
-### Exercise:
-Implement an extractive summarization algorithm using TextRank.
+How are Hidden Markov Models (HMMs) applied to part-of-speech tagging, and how does the Viterbi algorithm find the most probable sequence of tags?
 
-### Resource:
-- [TextRank for Automatic Text Summarization](https://www.aaai.org/ocs/index.php/ICWSM/ICWSM10/paper/view/1530/1826)
+**Exercise:**
+
+Implement an HMM for part-of-speech tagging using a tagged corpus like the Penn Treebank. Utilize the Viterbi algorithm to predict the sequence of POS tags for unseen sentences and evaluate the model's accuracy.
 
 ---
 
-## 10. Topic Modeling
-### Description:
-Explore topic modeling techniques, such as Latent Dirichlet Allocation (LDA) and Non-Negative Matrix Factorization (NMF).
+## 9. Named Entity Recognition (NER)
 
-### Internal Topics:
-- Latent Dirichlet Allocation (LDA)
-- Non-Negative Matrix Factorization (NMF)
-- Evaluating Topic Quality: Topic Coherence
+**Question:**
 
-### Exercise:
-Apply LDA to identify topics in a news article dataset.
+How are Conditional Random Fields (CRFs) used for Named Entity Recognition, and what advantages do they offer over generative models like HMMs?
 
-### Resource:
-- [Topic Modeling with LDA and NMF](https://towardsdatascience.com/topic-modeling-with-scikit-learn-e80d33668730)
+**Exercise:**
+
+Implement a CRF model for NER using an annotated dataset (e.g., the CoNLL-2003 NER dataset). Experiment with different feature sets such as word shapes, prefixes, suffixes, and part-of-speech tags. Evaluate the model's performance and compare it to an HMM-based NER system.
 
 ---
 
-## 11. Sentiment Analysis
-### Description:
-Develop models for sentiment analysis in texts.
+## 10. Topic Modeling with LDA
 
-### Internal Topics:
-- Sentiment Analysis
-- Logistic Regression for Sentiment Analysis
-- Multiclass Sentiment Analysis
-- Emotion Analysis
+**Question:**
 
-### Exercise:
-Train a logistic regression model to classify the sentiment of movie reviews.
+How does Latent Dirichlet Allocation (LDA) perform topic modeling, and how do Dirichlet distributions model the relationships between documents and topics?
 
-### Resource:
-- [Sentiment Analysis with Logistic Regression](https://towardsdatascience.com/sentiment-analysis-with-logistic-regression-9c16f55fcd24)
+**Exercise:**
+
+Apply LDA to a collection of documents (e.g., articles from various news categories). Extract topics by examining the most significant words associated with each topic. Validate the coherence of the topics and explore how the number of topics chosen affects the results.
 
 ---
 
-## 12. Spam Detection
-### Description:
-Build models for spam detection in texts.
+## 11. Sequence-to-Sequence Models with RNNs
 
-### Internal Topics:
-- Spam Detection
-- Naive Bayes for Spam Detection
-- Handling Imbalanced Data
+**Question:**
 
-### Exercise:
-Train a Naive Bayes model to detect spam emails.
+How do Recurrent Neural Networks (RNNs), especially LSTMs and GRUs, handle sequence-to-sequence tasks like machine translation, and how do they mitigate the vanishing gradient problem?
 
-### Resource:
-- [Naive Bayes for Spam Detection](https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/)
+**Exercise:**
+
+Build a sequence-to-sequence model using RNNs with LSTM units for a simple language translation task (e.g., translating short sentences from English to French) using a parallel corpus. Train the model and evaluate its translation quality on a test set.
 
 ---
 
-## 13. Probabilistic Models
-### Description:
-Explore probabilistic models applied to NLP, such as Markov models.
-
-### Internal Topics:
-- Markov Models
-- Smoothing and Log-Probabilities
-- Hidden Markov Models (HMM)
-
-### Exercise:
-Build and evaluate a Markov model for text generation.
-
-### Resource:
-- [Markov Chains and Probabilistic Models](https://www.cs.princeton.edu/courses/archive/fall06/cos402/papers/markov-chains.pdf)
-
----
-
-## 14. Text Processing with Deep Learning
-### Description:
-Introduce deep learning techniques applied to text processing.
-
-### Internal Topics:
-- Deep Neural Networks
-- Text Processing with CNNs
-- Text Processing with RNNs
-- Hybrid Architectures (CNN-RNN)
-
-### Exercise:
-Train a CNN for text classification on a review dataset.
-
-### Resource:
-- [Convolutional Neural Networks for Text Classification](https://arxiv.org/abs/1408.5882)
+Feel free to adjust or expand upon these sections to suit your learning objectives!
