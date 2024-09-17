@@ -1,0 +1,2 @@
+disaster: data/disaster_tweets.csv
+vaccination: data/vaccination_tweets.csv
